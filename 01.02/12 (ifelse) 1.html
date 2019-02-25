@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- https://learn.javascript.ru/ifelse -->
+    <script>
+        var user = prompt(
+            'Кто пришел?',
+            ''
+        );
+        if(user == 'Admin') {
+            var password = prompt(
+                'Введите пароль',
+                ''
+            );
+            if(password == 'Владыка ситхов'){
+                alert("Добро пожаловать");
+            } else if(password == null) {
+                alert('Вход отменен');
+            } else {
+                alert('Пароль не верен');
+            }
+        } else if(user == null) {
+            alert("Вход отменен");
+        } else {
+            alert("Не правильный логин");
+        }
+    </script>
+</body>
+</html>
